@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#eee}.cls-2{fill:#202020}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="Group_96" data-name="Group 96" transform="translate(-29 -276)">
+        <g id="Rectangle_338" class="cls-1" data-name="Rectangle 338" transform="translate(29 276)">
+            <rect width="32" height="28" class="cls-3" rx="3"/>
+            <rect width="31" height="27" x=".5" y=".5" class="cls-4" rx="2.5"/>
+        </g>
+        <g id="ic_equalizer_24px">
+            <path id="ic_equalizer_24px-2" d="M8.331 15.548h2.887V4H8.331zm-4.331 0h2.887V9.774H4zm8.661-7.939v7.939h2.887V7.609z" class="cls-2" data-name="ic_equalizer_24px" transform="translate(35.226 280.226)"/>
+        </g>
+    </g>
+</svg>

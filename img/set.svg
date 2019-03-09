@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.972 11.9">
+    <defs>
+        <style>
+            .cls-1{fill:#202020}
+        </style>
+    </defs>
+    <g id="ic_build_24px" transform="translate(-39 -281)">
+        <path id="ic_build_24px-2" d="M12.771 10.826L7.826 5.882a3.487 3.487 0 0 0-.815-3.749 3.592 3.592 0 0 0-4.021-.707l2.337 2.336L3.7 5.393 1.306 3.056a3.5 3.5 0 0 0 .706 4.021 3.487 3.487 0 0 0 3.749.815l4.945 4.945a.525.525 0 0 0 .761 0l1.25-1.25a.489.489 0 0 0 .054-.761z" class="cls-1" data-name="ic_build_24px" transform="translate(38.044 279.9)"/>
+    </g>
+</svg>

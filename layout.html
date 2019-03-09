@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+    
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Federal</title>
+  </head>
+  <body style="height:100vh;">
+    <section class="layoutHead px-4 py-4" style="height:190px;">
+        <div class="d-flex quickdeet">
+            <div class="d-flex dropdown bell ml-auto align-items-center mr-4">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bell" style="color:white;"></i>
+                        <span class="unread"></span>
+                    </a>
+            </div>
+
+            <div class="d-flex align-items-center logout">
+                   <a href="#">
+                        <i class="fas fa-lock pr-2" style="color:#b2fab4;"></i>
+                        <span>Logout</span>
+                   </a>
+            </div>
+       
+        </div>
+        <div class="userwrapper d-flex mt-5">
+                <div class="avatar" style="background-image: url(./img/avatar.jpg);"></div>
+                <div  class="ml-2 profile">
+                        <p>Hello, Adebayo</p>
+                        <small>Super admin</small>
+                </div>
+        </div>
+    </section>
+    <section class="menulist">
+        <div class="row mx-0">
+                <aside class="navigation col-sm-2 position-fixed px-0 pt-1">
+                        <ul class="nav sidemenu"> 
+                                <li class="nav-item w-100 pl-4 pr-3 active hover_g">
+                                    <a  class="nav-link sidemenulink" href="#dash-basic">
+                                        <span class="svgbg"><img src="./img/dash.svg" class="iconst"  alt="FormIcon"></span>
+                                          <span class="menutitle">Dashboard
+                                          </span>
+                                          
+                                         
+                                        </a>
+                                      
+                                </li>
+                                <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                                        <a  class="nav-link sidemenulink" href="#form-basic" data-toggle="collapse" aria-expanded="false" aria-controls="form-basic">
+                                                <span class="svgbg"><img src="./img/clip.svg" class="iconst"  alt="FormIcon"></span>
+                                                  <span class="menutitle">Data management
+                                                  </span>
+                                               
+                                                  <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                                </a>
+                                                <div class="collapse" id="form-basic">
+                                                        <ul class="sub-menu">
+                                                            <li class="py-2"><a href="#">Upload</a></li>
+                                                            <li class="py-2"><a href="#"> View all uploads</a></li>
+                                                           
+                                                        </ul>
+                                                      </div>
+                                </li>
+                                <!--  -->
+                                <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                                    <a  class="nav-link sidemenulink" href="#user-basic" data-toggle="collapse" aria-expanded="false" aria-controls="user-basic">
+                                            <span class="svgbg"><img src="./img/user.svg" class="iconst"  alt="FormIcon"></span>
+                                              <span class="menutitle">User management
+                                              </span>
+                                           
+                                              <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                            </a>
+                                            <div class="collapse" id="user-basic">
+                                                    <ul class="sub-menu">
+                                                           
+                                                    </ul>
+                                                  </div>
+                            </li>
+                            <!--  -->
+                            <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                                <a  class="nav-link sidemenulink" href="#set-basic" data-toggle="collapse" aria-expanded="false" aria-controls="set-basic">
+                                        <span class="svgbg"><img src="./img/set.svg" class="iconst"  alt="FormIcon"></span>
+                                          <span class="menutitle">Settings
+                                          </span>
+                                       
+                                          <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                        </a>
+                                        <div class="collapse" id="set-basic">
+                                                <ul class="sub-menu">
+                                                       
+                                                            <li class="py-2"><a href="#">Domains</a></li>
+                                                            <li class="py-2"><a href="#">Source</a></li>
+                                                            <li class="py-2"><a href="#">  Questionnaires</a></li>
+                                                          
+                                                </ul>
+                                              </div>
+                        </li>
+                        </ul>
+                    </aside>
+            <div class="col-sm-10 offset-sm-2">
+                <div class="container createForm">
+                    <div class="card">
+                        <div class="card-header d-flex">
+                            <span><img src="./img/clip.svg" style="height:22px;width: 18px" alt="createform"></span>
+                            <h4 class="form-title mb-0">Data Management</h4>
+                        </div>
+
+                        <div class="card-body" style="height:65vh;overflow-Y:scroll;">
+                            
+                        </div>
+                    </div>
+                </div>
+                <footer class="my-3" style="font-size:12px;" >
+                        <div class="container d-flex justify-content-between">
+                            <p>© All right reserved 2018. |  Powered by: <span style="color:#129490;">Software Business Solutions Consulting</span> </p>
+      
+                            <div class="d-flex">
+                                <img src="img/sbs-logo.png" alt="sbsc_logo" class="mr-2">
+                                <img src="img/fmh_logo.png" alt="federal_logo">
+                            </div>
+                        </div>
+                    </footer>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+    $('#selectall').change(function () {
+    if ($(this).prop('checked')) {
+    $('input').prop('checked', true);
+    }
+    else {
+        $('input').prop('checked', false);
+    }
+});
+$('#selectall').trigger('change');
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

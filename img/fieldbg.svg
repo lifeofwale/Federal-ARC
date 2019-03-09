@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 621.97 939.889">
+    <defs>
+        <style>
+            .cls-1{opacity:.645}.cls-2{fill:rgba(238,238,238,.44)}.cls-3{fill:rgba(87,197,192,.1)}.cls-4{fill:rgba(255,255,255,.67)}.cls-5{fill:rgba(87,197,192,.11)}
+        </style>
+    </defs>
+    <g id="bkgd_img" transform="translate(-744.03 55.161)">
+        <g id="bkgd_img-2" class="cls-1" data-name="bkgd_img" transform="translate(-182.003 115.406)">
+            <path id="Path_3906" d="M0 0l408.076 39.809 39.809 394.037-408.076-39.809z" class="cls-2" data-name="Path 3906" transform="rotate(-40 624.195 -1213.463)"/>
+            <path id="Path_3907" d="M0 0l400.79 48.492 48.492 383.689-400.79-48.492z" class="cls-3" data-name="Path 3907" transform="rotate(-40 930.446 -1101.997)"/>
+            <path id="Path_3908" d="M0 0l400.79 48.492 48.492 383.689-400.79-48.492z" class="cls-4" data-name="Path 3908" transform="rotate(-40 748.854 -1168.09)"/>
+            <path id="Path_3909" d="M0 0l408.076 39.809 39.809 394.037-408.076-39.809z" class="cls-5" data-name="Path 3909" transform="rotate(-40 1063.309 -1053.639)"/>
+        </g>
+    </g>
+</svg>

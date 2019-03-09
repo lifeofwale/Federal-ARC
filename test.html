@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Requin_graph meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="js/filter_1.js"></script>
+    <script src="js/filter_3.js"></script>
+   
+     <title>Federal</title>
+  </head>
+  <body style="height:100vh;">
+    <section class="layoutHead px-4 py-4" style="height:190px;">
+        <div class="d-flex quickdeet">
+                <!-- <img src="img/arc_logo.png" alt="arclogo"> -->
+            <div class="d-flex dropdown bell ml-auto align-items-center mr-4">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bell" style="color:white;"></i>
+                        <span class="unread"></span>
+                    </a>
+            </div>
+
+            <div class="d-flex align-items-center logout">
+              
+                   <a href="landing_page.html">
+                        <i class="fas fa-lock pr-2" style="color:#b2fab4;"></i>
+                        <span>Logout</span>
+                   </a>
+            </div>
+       
+        </div>
+        <div class="userwrapper d-flex mt-5">
+                <div class="avatar" style="background-image: url(https://www.nairaland.com/attachments/1600206_ui20vc20isaac20adewole_jpege0b001bccf1c623fd90660b234ecae55);"></div>
+                <div  class="ml-2 profile">
+                        <p>Hello, Prof. Isaac Adewole</p>
+                        <small>Hon. Minister of Health</small>
+                </div>
+        </div>
+    </section>
+    <section class="menulist">
+        <div class="row mx-0">
+            <aside class="navigation col-sm-2 position-fixed px-0 pt-1">
+                <ul class="nav sidemenu"> 
+                        <li class="nav-item w-100 pl-4 pr-3 active hover_g">
+                            <a  class="nav-link sidemenulink" href="#dash-basic">
+                                <span class="svgbg"><img src="./img/dash.svg" class="iconst"  alt="FormIcon"></span>
+                                  <span class="menutitle">Dashboard
+                                  </span>
+                                  
+                                 
+                                </a>
+                              
+                        </li>
+                        <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                                <a  class="nav-link sidemenulink" href="#form-basic" data-toggle="collapse" aria-expanded="false" aria-controls="form-basic">
+                                        <span class="svgbg"><img src="./img/clip.svg" class="iconst"  alt="FormIcon"></span>
+                                          <span class="menutitle">Data management
+                                          </span>
+                                       
+                                          <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                        </a>
+                                        <div class="collapse" id="form-basic">
+                                                <ul class="sub-menu">
+                                                    <li class="py-2"><a href="upload_page.html">Upload</a></li>
+                                                    <li class="py-2"><a href="table_upload.html"> View all uploads</a></li>
+                                                   
+                                                </ul>
+                                              </div>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                            <a  class="nav-link sidemenulink" href="#user-basic" data-toggle="collapse" aria-expanded="false" aria-controls="user-basic">
+                                    <span class="svgbg"><img src="./img/user.svg" class="iconst"  alt="FormIcon"></span>
+                                      <span class="menutitle">User management
+                                      </span>
+                                   
+                                      <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                    </a>
+                                    <div class="collapse" id="user-basic">
+                                            <ul class="sub-menu">
+                                                   
+                                            </ul>
+                                          </div>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item w-100 pl-4 pr-3 hover_g">
+                        <a  class="nav-link sidemenulink" href="#set-basic" data-toggle="collapse" aria-expanded="false" aria-controls="set-basic">
+                                <span class="svgbg"><img src="./img/set.svg" class="iconst"  alt="FormIcon"></span>
+                                  <span class="menutitle">Settings
+                                  </span>
+                               
+                                  <i class="fas fa-angle-right float-right js-rotate-if-collapsed pt-2" style="color:#202020;"></i>
+                                </a>
+                                <div class="collapse" id="set-basic">
+                                        <ul class="sub-menu">
+                                               
+                                                    <li class="py-2"><a href="#">Domains</a></li>
+                                                    <li class="py-2"><a href="#">Source</a></li>
+                                                    <li class="py-2"><a href="#">  Questionnaires</a></li>
+                                                  
+                                        </ul>
+                                      </div>
+                </li>
+                </ul>
+            </aside>
+            <div class="col-sm-10 offset-sm-2">
+              <div class="container dashboardArea">
+                    <div class="card">
+                        <div class="card-header">
+                              <h4 class="form-title mb-0">Warehouse Capability Maturity</h4>
+                              <p class="form-text mb-2">Warehousing Visibility and Governance Project</p>
+                             
+                        </div>
+                        <div class="card-body" style="height:65vh;overflow-Y:scroll;">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active domain_sec" id="state_wise-tab" data-toggle="tab" href="#state_wise" role="tab" aria-controls="state_wise" aria-selected="true">State-wise assessment performance</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="domain-tab" data-toggle="tab" href="#domain" role="tab" aria-controls="domain" aria-selected="false">By Domains</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="politic-tab" data-toggle="tab" href="#politic" role="tab" aria-controls="politic" aria-selected="false">By Geo-political zones</a>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="state_wise" role="tabpanel" aria-labelledby="state_wise-tab">
+
+                                            <h6 class="pt-2" style="font-size:12px;">Filter by domain</h6>
+
+                                            <ul id="filterOptions" class="d-flex align-content-around flex-wrap">
+                                                    <li class="active"><a href="#" class="allZone">All zones</a></li>
+                                                    <li><a href="#" class="N_central">North Central</a></li>
+                                                    <li><a href="#" class="N_East">North East</a></li> 
+                                                    <li><a href="#" class="N_West">North West</a></li> 
+                                                    <li><a href="#" class="S_East">South East</a></li> 
+                                                    <li><a href="#" class="south">South</a></li> 
+                                                    <li><a href="#" class="S_west">South West</a></li> 
+                                            </ul>
+
+
+                                            <div id="ourHolder">
+                                                    <div class="allZone Grade_sys">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                    <p class="mb-0">Pharma grade</p>
+                                                                    <small>Above 90%</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                        <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                        <small>From 75% to 89%</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                            <small>From 60% to 74%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                <small>From 50% to 59%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Poor System</p>
+                                                                                    <small>Below 50%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart" class="mt-3" width="400" height="150"></canvas>
+
+                                                       
+
+
+                                                    </div>
+
+
+
+
+
+                                                    <!-- allzoneend -->
+                                                    <div class="N_central Grade_sys">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                    <p class="mb-0">Pharma grade</p>
+                                                                    <small>Above 90%</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                        <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                        <small>From 75% to 89%</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                            <small>From 60% to 74%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                <small>From 50% to 59%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Poor System</p>
+                                                                                    <small>Below 50%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_nc" class="mt-3" width="400" height="150"></canvas>
+                                                    </div>
+                                                    <div class="N_East Grade_sys">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                    <p class="mb-0">Pharma grade</p>
+                                                                    <small>Above 90%</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                        <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                        <small>From 75% to 89%</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                            <small>From 60% to 74%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                <small>From 50% to 59%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Poor System</p>
+                                                                                    <small>Below 50%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_ne" class="mt-3" width="400" height="150"></canvas>
+                                                    </div>
+                                                    <div class="N_West Grade_sys">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                    <p class="mb-0">Pharma grade</p>
+                                                                    <small>Above 90%</small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                        <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                        <small>From 75% to 89%</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                            <small>From 60% to 74%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                <small>From 50% to 59%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Poor System</p>
+                                                                                    <small>Below 50%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_nw" class="mt-3" width="400" height="150"></canvas>
+                                                          </div>
+                                                          <div class="S_East Grade_sys">
+                                                                <p style="font-size:12px;">Grading system</p>
+                                                                <div class="d-flex justify-content-between">
+                                                                <div class="d-flex Pharma mr-2">
+                                                                    <div><span class="pharma_clr mr-2"></span></div>
+                                                                    <div>
+                                                                        <p class="mb-0">Pharma grade</p>
+                                                                        <small>Above 90%</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma3 mr-2">
+                                                                        <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                            <small>From 75% to 89%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma2 mr-2">
+                                                                            <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                                <small>From 60% to 74%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Non_pharma1 mr-2">
+                                                                                <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                    <small>From 50% to 59%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex Poor_System mr-3">
+                                                                                    <div><span class="Poor_System mr-2"></span></div>
+                                                                                    <div>
+                                                                                        <p class="mb-0">Poor System</p>
+                                                                                        <small>Below 50%</small>
+                                                                                    </div>
+                                                                                </div>
+                                                                              
+                                                                </div>
+                                                                <!-- keypoint end -->
+    
+                                                                <canvas id="myChart_se" class="mt-3" width="400" height="150"></canvas>
+                                                              </div>
+                                                              <div class="south Grade_sys">
+                                                                    <p style="font-size:12px;">Grading system</p>
+                                                                    <div class="d-flex justify-content-between">
+                                                                    <div class="d-flex Pharma mr-2">
+                                                                        <div><span class="pharma_clr mr-2"></span></div>
+                                                                        <div>
+                                                                            <p class="mb-0">Pharma grade</p>
+                                                                            <small>Above 90%</small>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma3 mr-2">
+                                                                            <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                                <small>From 75% to 89%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Non_pharma2 mr-2">
+                                                                                <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                                    <small>From 60% to 74%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex Non_pharma1 mr-2">
+                                                                                    <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                    <div>
+                                                                                        <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                        <small>From 50% to 59%</small>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="d-flex Poor_System mr-3">
+                                                                                        <div><span class="Poor_System mr-2"></span></div>
+                                                                                        <div>
+                                                                                            <p class="mb-0">Poor System</p>
+                                                                                            <small>Below 50%</small>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                  
+                                                                    </div>
+                                                                    <!-- keypoint end -->
+        
+                                                                    <canvas id="myChart_s" class="mt-3" width="400" height="150"></canvas>
+                                                                  </div>
+                                                                  <div class="S_west Grade_sys">
+                                                                        <p style="font-size:12px;">Grading system</p>
+                                                                        <div class="d-flex justify-content-between">
+                                                                        <div class="d-flex Pharma mr-2">
+                                                                            <div><span class="pharma_clr mr-2"></span></div>
+                                                                            <div>
+                                                                                <p class="mb-0">Pharma grade</p>
+                                                                                <small>Above 90%</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Non_pharma3 mr-2">
+                                                                                <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                <div>
+                                                                                    <p class="mb-0">Level 3 Non-pharma grade</p>
+                                                                                    <small>From 75% to 89%</small>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex Non_pharma2 mr-2">
+                                                                                    <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                    <div>
+                                                                                        <p class="mb-0">Level 2 Non-pharma grade</p>
+                                                                                        <small>From 60% to 74%</small>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="d-flex Non_pharma1 mr-2">
+                                                                                        <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                        <div>
+                                                                                            <p class="mb-0">Level 1 Non-pharma grade</p>
+                                                                                            <small>From 50% to 59%</small>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="d-flex Poor_System mr-3">
+                                                                                            <div><span class="Poor_System mr-2"></span></div>
+                                                                                            <div>
+                                                                                                <p class="mb-0">Poor System</p>
+                                                                                                <small>Below 50%</small>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                      
+                                                                        </div>
+                                                                        <!-- keypoint end -->
+            
+                                                                        <canvas id="myChart_sw" class="mt-3" width="400" height="150"></canvas>
+                                                                      </div>
+                                                
+                                                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <!-- state emd -->
+                                        </div>
+                                        <div class="tab-pane fade" id="domain" role="tabpanel" aria-labelledby="domain-tab">
+
+                                            <h6 class="pt-2" style="font-size:12px;">Filter by domain</h6>
+
+                                            <ul id="filterOptions_2" class="d-flex align-content-around flex-wrap">
+                                                    <li class="active"><a href="#" class="ware_f">Warehouse facility</a></li>
+                                                    <li><a href="#" class="ware_s">Warehouse Staffing</a></li>
+                                                    <li><a href="#" class="ware_d">Documentation</a></li> 
+                                                    <li><a href="#" class="ware_c">Quality Control</a></li> 
+                                                    <li><a href="#" class="ware_t">Transportation</a></li> 
+                                                    <li><a href="#" class="ware_r">Returned Products</a></li> 
+                                                    <li><a href="#" class="ware_i">Self Inspection</a></li> 
+                                                    <li><a href="#" class="ware_m">Warehouse Management</a></li> 
+                                                    <li><a href="#" class="ware_g">Good Storage Practice</a></li> 
+                                                    <li><a href="#" class="ware_o">Organization and Management</a></li> 
+                                                    <li><a href="#" class="ware_v">Vehicles and Equipment</a></li> 
+                                                    <li><a href="#" class="ware_a">Measurements and Analysis</a></li> 
+                                            </ul>
+
+
+                                            <div id="ourHolder_2">
+                                                    <div class="Grade_sys ware_f">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_3" class="mt-3" width="400" height="150"></canvas>
+
+                                                       
+
+
+                                                    </div>
+
+
+
+
+
+                                                    <!-- allzoneend -->
+                                                    <div class="Grade_sys ware_s">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_staff" class="mt-3" width="400" height="150"></canvas>
+                                                    </div>
+                                                    <div class="Grade_sys ware_d">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_doc" class="mt-3" width="400" height="150"></canvas>
+                                                    </div>
+                                                    <div class="Grade_sys ware_c">
+                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_qua" class="mt-3" width="400" height="150"></canvas>
+                                                          </div>
+                                                          <div class="Grade_sys ware_t">
+                                                                <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_tran" class="mt-3" width="400" height="150"></canvas>
+                                                              </div>
+                                                              <div class="Grade_sys ware_r">
+                                                                    <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_ret" class="mt-3" width="400" height="150"></canvas>
+                                                                  </div>
+                                                                  <div class="Grade_sys ware_i">
+                                                                        <p style="font-size:12px;">Grading system</p>
+                                                                        <div class="d-flex justify-content-between">
+                                                                        <div class="d-flex Pharma mr-2">
+                                                                            <div><span class="pharma_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">Above 90%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Non_pharma3 mr-2">
+                                                                                <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                <div>
+                                                                                   
+                                                                                    <p class="mt-1">From 75% to 89%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex Non_pharma2 mr-2">
+                                                                                    <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                    <div>
+                                                                                       
+                                                                                        <p class="mt-1">From 60% to 74%</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="d-flex Non_pharma1 mr-2">
+                                                                                        <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                        <div>
+                                                                                           
+                                                                                            <p class="mt-1">From 50% to 59%</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="d-flex Poor_System mr-3">
+                                                                                            <div><span class="Poor_System mr-2"></span></div>
+                                                                                            <div>
+                                                                                             
+                                                                                                <p class="mt-1">Below 50%</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                      
+                                                                        </div>
+                                                                        <!-- keypoint end -->
+            
+                                                                        <canvas id="myChart_sef" class="mt-3" width="400" height="150"></canvas>
+                                                                      </div>
+                                                                      <div class="Grade_sys ware_m">
+                                                                            <p style="font-size:12px;">Grading system</p>
+                                                                            <div class="d-flex justify-content-between">
+                                                                            <div class="d-flex Pharma mr-2">
+                                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                                <div>
+                                                                                   
+                                                                                    <p class="mt-1">Above 90%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                    <div>
+                                                                                       
+                                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                        <div>
+                                                                                           
+                                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                            <div>
+                                                                                               
+                                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                                <div>
+                                                                                                 
+                                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                          
+                                                                            </div>
+                                                                            <!-- keypoint end -->
+                
+                                                                            <canvas id="myChart_ware" class="mt-3" width="400" height="150"></canvas>
+                                                                            </div>
+                                                                            <div class="Grade_sys ware_g">
+                                                                                    <p style="font-size:12px;">Grading system</p>
+                                                                                    <div class="d-flex justify-content-between">
+                                                                                    <div class="d-flex Pharma mr-2">
+                                                                                        <div><span class="pharma_clr mr-2"></span></div>
+                                                                                        <div>
+                                                                                           
+                                                                                            <p class="mt-1">Above 90%</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="d-flex Non_pharma3 mr-2">
+                                                                                            <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                            <div>
+                                                                                               
+                                                                                                <p class="mt-1">From 75% to 89%</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="d-flex Non_pharma2 mr-2">
+                                                                                                <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                                <div>
+                                                                                                   
+                                                                                                    <p class="mt-1">From 60% to 74%</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex Non_pharma1 mr-2">
+                                                                                                    <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                                    <div>
+                                                                                                       
+                                                                                                        <p class="mt-1">From 50% to 59%</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="d-flex Poor_System mr-3">
+                                                                                                        <div><span class="Poor_System mr-2"></span></div>
+                                                                                                        <div>
+                                                                                                         
+                                                                                                            <p class="mt-1">Below 50%</p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                  
+                                                                                    </div>
+                                                                                    <!-- keypoint end -->
+                        
+                                                                                    <canvas id="myChart_gsp" class="mt-3" width="400" height="150"></canvas>
+                                                                                    </div>
+                                                                                    <div class="Grade_sys ware_o">
+                                                                                            <p style="font-size:12px;">Grading system</p>
+                                                            <div class="d-flex justify-content-between">
+                                                            <div class="d-flex Pharma mr-2">
+                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                <div>
+                                                                   
+                                                                    <p class="mt-1">Above 90%</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                    <div>
+                                                                       
+                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                        <div>
+                                                                           
+                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                            <div>
+                                                                               
+                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                <div>
+                                                                                 
+                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          
+                                                            </div>
+                                                            <!-- keypoint end -->
+
+                                                            <canvas id="myChart_oam" class="mt-3" width="400" height="150"></canvas>
+                                                                                            </div>
+                                                                                            <div class="Grade_sys ware_v">
+                                                                                                    <p style="font-size:12px;">Grading system</p>
+                                                                                                    <div class="d-flex justify-content-between">
+                                                                                                    <div class="d-flex Pharma mr-2">
+                                                                                                        <div><span class="pharma_clr mr-2"></span></div>
+                                                                                                        <div>
+                                                                                                           
+                                                                                                            <p class="mt-1">Above 90%</p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="d-flex Non_pharma3 mr-2">
+                                                                                                            <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                                            <div>
+                                                                                                               
+                                                                                                                <p class="mt-1">From 75% to 89%</p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="d-flex Non_pharma2 mr-2">
+                                                                                                                <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                                                <div>
+                                                                                                                   
+                                                                                                                    <p class="mt-1">From 60% to 74%</p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="d-flex Non_pharma1 mr-2">
+                                                                                                                    <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                                                    <div>
+                                                                                                                       
+                                                                                                                        <p class="mt-1">From 50% to 59%</p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="d-flex Poor_System mr-3">
+                                                                                                                        <div><span class="Poor_System mr-2"></span></div>
+                                                                                                                        <div>
+                                                                                                                         
+                                                                                                                            <p class="mt-1">Below 50%</p>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                  
+                                                                                                    </div>
+                                                                                                    <!-- keypoint end -->
+                                        
+                                                                                                    <canvas id="myChart_veh" class="mt-3" width="400" height="150"></canvas>
+                                                                                                    </div>
+                                                                                                    <div class="Grade_sys ware_a">
+                                                                                                            <p style="font-size:12px;">Grading system</p>
+                                                                                                            <div class="d-flex justify-content-between">
+                                                                                                            <div class="d-flex Pharma mr-2">
+                                                                                                                <div><span class="pharma_clr mr-2"></span></div>
+                                                                                                                <div>
+                                                                                                                   
+                                                                                                                    <p class="mt-1">Above 90%</p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="d-flex Non_pharma3 mr-2">
+                                                                                                                    <div><span class="Non_pharma3_clr  mr-2"></span></div>
+                                                                                                                    <div>
+                                                                                                                       
+                                                                                                                        <p class="mt-1">From 75% to 89%</p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="d-flex Non_pharma2 mr-2">
+                                                                                                                        <div><span class="Non_pharma2_clr mr-2"></span></div>
+                                                                                                                        <div>
+                                                                                                                           
+                                                                                                                            <p class="mt-1">From 60% to 74%</p>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="d-flex Non_pharma1 mr-2">
+                                                                                                                            <div><span class="Non_pharma1_clr mr-2"></span></div>
+                                                                                                                            <div>
+                                                                                                                               
+                                                                                                                                <p class="mt-1">From 50% to 59%</p>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="d-flex Poor_System mr-3">
+                                                                                                                                <div><span class="Poor_System mr-2"></span></div>
+                                                                                                                                <div>
+                                                                                                                                 
+                                                                                                                                    <p class="mt-1">Below 50%</p>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                          
+                                                                                                            </div>
+                                                                                                            <!-- keypoint end -->
+                                                
+                                                                                                            <canvas id="myChart_maa" class="mt-3" width="400" height="150"></canvas>
+                                                                                                            </div>
+                                                
+                                                  </div>
+
+
+
+
+
+                                            <!-- domain -->
+                                        </div>
+                                        <div class="tab-pane fade" id="politic" role="tabpanel" aria-labelledby="politic-tab">
+                                            <p>Data is updating. This my take a</p>
+                                        </div>
+                                      </div>
+                                      <div class="row mt-5 part2">
+                                          <div class="col-sm-7 assessment_1 col-xs-12">
+                                              <div class="card">
+                                                  <div class="card-header">
+                                                          <h4 class="form-title">
+                                                                  Average Assessment Score
+                                                          </h4>
+                                                  </div>
+                                                  <div class="card-body three_filter">
+                                                          <div class="one_arrow_2 row justify-content-betwwen">
+                                                                  <div class="col-sm-6 col-xs-12 px-1">
+                                                                          <label for="s_Score_1">Geo-political zones</label>
+                                                                          <select name="s_Score" id="s_Score_1" >
+                                                                                  <option value="n_graph_1" >North Central</option>
+                                                                                  <option value="ne_graph_1">North East</option>
+                                                                                  <option value="nw_graph_1">North West</option>
+                                                                                  <option value="se_graph_1" selected>South East</option>
+                                                                                  <option value="s_graph_1">South</option>
+                                                                                  <option value="sw_graph_1">South West</option>
+                                                                              </select>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-12 px-1">
+                                                                          <label  for="s_Score_2">Domains</label>
+                                                                          <select name="s_Score" id="s_Score_2">
+                                                                                  <option value="n_graph" selected>All</option>
+                                                                                  <option value="n_graph" >Warehouse facility</option>
+                                                                                  <option value="ne_graph">Warehouse Staffing</option>
+                                                                                  <option value="nw_graph">Documentation</option>
+                                                                                  <option value="se_graph">Quality Control</option>
+                                                                                  <option value="s_graph">Transportation</option>
+                                                                                  <option value="sw_graph">Returned Products</option>
+                                                                                  <option value="sw_graph">Self Inspection</option>
+                                                                                  <option value="sw_graph">Warehouse Management</option>
+                                                                                  <option value="sw_graph">Good Storage Practice</option>
+                                                                                  <option value="sw_graph">Organization and Management</option>
+                                                                                   <option value="sw_graph">Vehicles and Equipment</option>
+                                                                                   <option value="sw_graph">Measurements and Analysis</option>
+                                                                              </select>
+                                                                  </div>
+                                                                  <div class="col-sm-3 col-xs-12 px-1">
+                                                                          <label for="s_Score_3">Sources</label>
+                                                                          <select name="s_Score" id="s_Score_3" >
+                                                                                  <option value="n_graph" selected>All</option>
+                                                                                 
+                                                                              </select>
+              
+                                                                  </div>
+                                                               
+                                                               
+                                                                   
+                                                          </div>
+                                                          <div class="n_graph_1 box_1 mt-2">
+                                                                  No data yet
+                                                            </div>
+                                                            <div class="ne_graph_1 box_1 mt-2">
+                                                                <p>No data Yet</p>
+                                                              </div>
+                                                              <div class="nw_graph_1 box_1 mt-2">
+                                                                <p>No data Yet</p>
+                                                                  </div>
+                                                          <div class="se_graph_1 box_1 mt-2">
+                                                                  <canvas id="bar-chart" width="400" height="100"></canvas>
+          
+                                                                  <div class="pharm_progress mt-2">
+                                                                          <div class="flex-wrapper">
+                                                                                  <div class="single-chart">
+                                                                                    <p style="text-align:center;">Pharma grade</p>
+                                                                                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                                                                      <path class="circle-bg"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <path class="circle"
+                                                                                        stroke-dasharray="100, 100"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <text x="18" y="20.35" class="percentage">0</text>
+                                                                                    </svg>
+                                                                                  </div>
+                                                                                  
+                                                                                  <div class="single-chart">
+                                                                                      <p style="text-align:center;">Level 1</p>
+                                                                                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                                                                                      <path class="circle-bg"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <path class="circle"
+                                                                                        stroke-dasharray="100, 100"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <text x="18" y="20.35" class="percentage">0</text>
+                                                                                    </svg>
+                                                                                  </div>
+                                                                                
+                                                                                  <div class="single-chart">
+                                                                                      <p style="text-align:center;">Level 2</p>
+                                                                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                                                                      <path class="circle-bg"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <path class="circle"
+                                                                                        stroke-dasharray="100, 100"
+                                                                                        d="M18 2.0845
+                                                                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                          a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                      />
+                                                                                      <text x="18" y="20.35" class="percentage">0</text>
+                                                                                    </svg>
+                                                                                  </div>
+                                                                                  <div class="single-chart">
+                                                                                          <p style="text-align:center;">Level 3</p>
+                                                                                        <svg viewBox="0 0 36 36" class="circular-chart blue_2">
+                                                                                          <path class="circle-bg"
+                                                                                            d="M18 2.0845
+                                                                                              a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                              a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                          />
+                                                                                          <path class="circle"
+                                                                                            stroke-dasharray="100, 100"
+                                                                                            d="M18 2.0845
+                                                                                              a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                              a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                          />
+                                                                                          <text x="18" y="20.35" class="percentage">2</text>
+                                                                                        </svg>
+                                                                                      </div>
+                                                                                      <div class="single-chart">
+                                                                                              <p style="text-align:center;">Poor system</p>
+                                                                                            <svg viewBox="0 0 36 36" class="circular-chart blue_3">
+                                                                                              <path class="circle-bg"
+                                                                                                d="M18 2.0845
+                                                                                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                              />
+                                                                                              <path class="circle"
+                                                                                                stroke-dasharray="100, 100"
+                                                                                                d="M18 2.0845
+                                                                                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                                                                                              />
+                                                                                              <text x="18" y="20.35" class="percentage">2</text>
+                                                                                            </svg>
+                                                                                          </div>
+                                                                                </div>
+                                                                  </div>
+                                                          </div>
+          
+                                                          <div class="s_graph_1 box_1 mt-2">
+                                                              <p>No data Yet</p>
+                                                          </div>
+                                                          <div class="sw_graph_1 box_1 mt-2">
+                                                              <p>No data Yet</p>
+                                                          </div>
+                                                       
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-5 col-xs-12">
+                                                  <div class="card assessment_2">
+                                                          <div class="card-header">
+                                                                  <h4 class="form-title">Assessment Score Per Source</h4>
+                                                          </div>
+                                                          <div class="card-body">
+                                                              <p>States grouped by region</p>
+                                                          <div class="one_arrow">
+                                                                  <select name="s_Score" id="s_Score">
+                                                                      <option value="n_graph" selected>North Central</option>
+                                                                      <option value="ne_graph">North East</option>
+                                                                      <option value="nw_graph">North West</option>
+                                                                      <option value="se_graph">South East</option>
+                                                                      <option value="s_graph">South</option>
+                                                                      <option value="sw_graph">South West</option>
+                                                                  </select>
+                                                          </div>
+                                                                <div class="n_graph box mt-2">
+                                                                      <canvas id="myChart_2" width="400" height="300"></canvas>
+                                                                </div>
+                                                                <div class="ne_graph box mt-2">
+                                                                    <p>No data Yet</p>
+                                                                  </div>
+                                                                  <div class="nw_graph box mt-2">
+                                                                    <p>No data Yet</p>
+                                                                      </div>
+                                                              <div class="se_graph box mt-2">
+                                                                  <p>No data Yet</p>
+                                                              </div>
+          
+                                                              <div class="s_graph box mt-2">
+                                                                  <p>No data Yet</p>
+                                                              </div>
+                                                              <div class="sw_graph box mt-2">
+                                                                  <p>No data Yet</p>
+                                                              </div>
+                                                                  
+                                                          </div>
+                                                      </div>
+                                          </div>
+                                      </div>
+          
+                        </div>
+                    </div>
+
+                         <!-- card 2 -->
+                        
+              </div>
+              <footer class="my-3" style="font-size:12px;" >
+                  <div class="container d-flex justify-content-between">
+                      <p>© All right reserved 2018. |  Powered by: <span style="color:#129490;">Software Business Solutions Consulting</span> </p>
+
+                      <div class="d-flex">
+                          <img src="img/sbs-logo.png" alt="sbsc_logo" class="mr-2">
+                          <img src="img/fmh_logo.png" alt="federal_logo">
+                      </div>
+                  </div>
+              </footer>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+         
+
+<script src="js/filter_2.js"></script>
+<script src="js/filter_4.js"></script>
+<!-- slssss -->
+<script src="js/bar.js"></script>
+<script src="js/bar_2.js"></script>
+<script src="js/bar_nc.js"></script>
+<script src="js/bar_ne.js"></script>
+<script src="js/bar_nw.js"></script>
+<script src="js/bar_se.js"></script>
+<script src="js/bar_s.js"></script>
+<script src="js/bar_sw.js"></script>
+<script src="js/bar_staff.js"></script>
+<script src="js/bar_doc.js"></script>
+<script src="js/bar_qua.js"></script>
+<script src="js/bar_tran.js"></script>
+<script src="js/bar_ret.js"></script>
+<script src="js/bar_sef.js"></script>
+<script src="js/bar_ware.js"></script>
+<script src="js/bar_gsp.js"></script>
+<script src="js/bar_oam.js"></script>
+<script src="js/bar_veh.js"></script>
+<script src="js/bar_maa.js"></script>
+
+<script src="js/h_bar.js"></script>
+<script src="js/pie.js"></script>
+
+                    
+  </body>
+</html>
+
